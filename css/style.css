@@ -1,0 +1,139 @@
+html {background-color: #f8f8f8}
+
+.navbar-form{margin:0 10px 10px 0;}
+
+.dropdown-menu {
+	padding:10px;
+}
+
+#follow {margin:0 ;}
+
+svg {z-index:99999;overflow:visible;}
+
+
+#content{
+	margin:20px 10px 10px 20px
+}
+
+#viewport {
+	overflow:hidden; /* Occlude elements outside viewport! */
+	height:800px;
+	width:1900px;
+	z-index:-500;
+	background-color:#FFFFFF;
+	/*border-left:1px solid #ccc;*/
+	
+}
+#wall {
+	/* Default settings by code:
+	 *	position: relative;
+	 *	cursor: move;
+	 */z-index:0;
+	 overflow:visible;
+
+}
+#wall ._tile {
+	/* Default settings by code:
+	 * position: absolute,
+	 * left: [auto],
+	 * top: [auto],
+	 * width: [set by constructor],
+	 * height: [set by constructor], */
+	overflow: hidden;
+	color:#000;
+	z-index:0;
+	background-color: #fff;
+
+}
+
+
+#sidepanel {
+	width:180px;
+	float:left;
+	background-color: #f7f7f7;
+
+}
+
+.container-fluid {
+ padding: 0;
+}
+
+
+.marker{
+ width:6px;
+ height:6px;
+ margin:-3px 0 0 -3px;
+ position: absolute;
+ z-index:1000;
+ border-radius:100px;
+ background-color:#fff;
+ border:1px solid #444;
+ /*box-shadow:1px 1px 2px #666; */
+}
+.marker:before {
+   content: "";
+   width:2px;
+   height:20px;
+   display:block;
+   margin:-20px 0 0 2px;
+   background: black;
+}
+	.me {
+	 width:6px;
+	 height:6px;
+	 background-color:black;
+	 border:1px solid white;
+	 border-radius:50px;
+	 margin:-3px 0 0 -3px;
+	-webkit-transform-origin: center center;
+	z-index:1100;
+	}
+	.me:before {
+	   content: "";
+	   width:2px;
+	   height:50px;
+	   display:block;
+	   margin:-50px 0 0 2px;
+	   background: red;
+	}
+
+
+	.blufor {
+	 background-color:green;
+	 border:1px solid #444;
+	}
+
+	.opfor {
+	 background-color:red;
+	 border:1px solid #444;
+	 z-index:900;
+	}
+	
+	.vehicles {
+	 z-index:10;
+	 border:none;
+	 width:8px;
+	 height:8px;
+	 margin:-4px 0 0 -4px;
+	 background-color:blue;
+	 /*background-image: url(../img/car.png);*/
+	 -webkit-transform-origin: center center;
+	 opacity: 0.5;
+	}
+	.vehicles:before {
+	   content: "";
+	   width:2px;
+	   height:16px;
+	   display:block;
+	   margin:-8px 0 0 2px;
+	   background: black;
+	}
+	
+	.indi {
+	 background-color:yellow;
+	 border:1px solid #444;
+	}
+	.unknown {
+	 background-color:orange;
+	 border:1px solid #444;
+	}
